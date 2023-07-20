@@ -47,6 +47,7 @@ const Input = styled.input`
   font-weight: 700;
   height: var(--height);
   padding-left: var(--paddingLeft);
+  outline-offset: 2px;
   width: var(--width);
 
   &::placeholder {
