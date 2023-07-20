@@ -43,6 +43,7 @@ const InputWrapper = styled.div`
 const Input = styled.input`
   border: none;
   border-bottom: 1px solid ${COLORS.black};
+  color: inherit;
   font-size: var(--fontSize);
   font-weight: 700;
   height: var(--height);
