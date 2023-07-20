@@ -1,4 +1,4 @@
-import React, { useId } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import { COLORS } from "../../constants";
@@ -9,12 +9,14 @@ import VisuallyHidden from "../VisuallyHidden";
 const SIZES = {
   small: {
     iconSize: 16,
+    "--borderWidth": "1px",
     "--fontSize": "14px",
     "--height": "24px",
     "--paddingLeft": "24px",
   },
   large: {
     iconSize: 24,
+    "--borderWidth": "2px",
     "--fontSize": "18px",
     "--height": "36px",
     "--paddingLeft": "36px",
@@ -42,7 +44,7 @@ const InputWrapper = styled.div`
 
 const Input = styled.input`
   border: none;
-  border-bottom: 1px solid ${COLORS.black};
+  border-bottom: var(--borderWidth) solid ${COLORS.black};
   color: inherit;
   font-size: var(--fontSize);
   font-weight: 700;
